@@ -1,7 +1,6 @@
 :{$PORT}
 
-handle_path /v1/prompts/* {
-  uri replace /chat/ /
+handle {
   reverse_proxy {
     to api.portkey.ai
   }
