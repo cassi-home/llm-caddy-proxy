@@ -1,5 +1,7 @@
+:{$PORT}
+
 handle {
   reverse_proxy {
-    to api.portkey.ai
+    to api.portkey.ai:443
   }
 }
