@@ -3,6 +3,6 @@
 handle_path /v1/prompts/* {
   uri replace /chat/ /
   reverse_proxy {
-    to "https://api.portkey.ai/{uri}"
+    to api.portkey.ai
   }
 }
