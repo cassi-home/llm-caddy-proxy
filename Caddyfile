@@ -1,5 +1,3 @@
-:{$PORT}
-
 handle {
   reverse_proxy {
     to api.portkey.ai
