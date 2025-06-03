@@ -1,4 +1,6 @@
 :{$PORT}
 
-root * /srv
-file_server
+handle_path /v1/prompts/* {
+  uri /chat/ /
+  reverse_proxy https://api.portkey.ai/{uri}
+}
